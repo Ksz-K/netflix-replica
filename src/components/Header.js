@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import logo from "../svg/logo.svg";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Icon } from "react-icons-kit";
 import { ic_keyboard_arrow_right } from "react-icons-kit/md/ic_keyboard_arrow_right";
 import { Button } from "./Button";
