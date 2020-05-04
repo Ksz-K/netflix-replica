@@ -96,7 +96,7 @@ const HeaderComponent = styled.div`
     text-align: center;
     flex-direction: column;
     z-index: 2;
-    ${customMedia.lessThan("smTablet")`
+    ${customMedia.lessThan("Tablet")`
  display:grid;
  grid-template-rows: repeat(3, 60px);
  margin-top:8rem
@@ -118,24 +118,6 @@ const HeaderComponent = styled.div`
     `}
    
   }
-  // .main-offer-btn {
-  //   display: inline-block;
-  //   background: var(--main-red);
-  //   text-transform: uppercase;
-  //   border: none;
-  //   outline: none;
-  //   margin: 0 33%;
-  //   padding: 1.5rem;
-  //   border-radius: 0.1875rem;
-  //   font-size: 2rem;
-  //   text-align: center;
-  //   box-shadow: 0 1 px 0 rgba(0, 0, 0, 0.45);
-  //   transition: background 0.2s ease-in;
-  //   cursor: pointer;
-  //   &:hover {
-  //     background: var(--main-red-hover);
-  //   }
-  // }
 
   .icon {
     vertical-align: bottom;
@@ -159,8 +141,8 @@ const SubTitle = styled.h2`
   line-height: 1.25rem;
   margin: 0 0 1.875rem;
   text-transform: uppercase;
-  ${customMedia.lessThan("smTablet")`
-  font-size:1.4rem
-  margin:0
+  ${customMedia.lessThan("tablet")`
+  font-size:1.5rem;
+  line-height: 1.75rem;
   `}
 `;

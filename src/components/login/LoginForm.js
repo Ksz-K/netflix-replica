@@ -1,12 +1,22 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { generateMedia } from "styled-media-query";
 import { Link } from "react-router-dom";
 import FBlogo from "../../images/fb-logo.png";
+
+//Media query
+const customMedia = generateMedia({
+  tablet: "640px",
+});
+
 const FormContainer = styled.div`
   display: grid;
   justify-content: center;
   position: relative;
   z-index: 5;
+  ${customMedia.lessThan("tablet")`
+    border-bottom: 1px solid #999;
+    `}
 
   .form-container {
     background: rgba(0, 0, 0, 0.55);
@@ -14,6 +24,10 @@ const FormContainer = styled.div`
     width: 28.125rem;
     height: 41.25rem;
     padding: 4rem;
+    ${customMedia.lessThan("tablet")`
+    padding:0.6rem;
+    height:35rem;
+    `}
   }
 
   .input-container {
@@ -98,6 +112,12 @@ const FormContainer = styled.div`
     color: #828282;
     margin-left: 6.6rem;
     font-size: 0.9rem;
+    &:hover {
+      text-decoration: underline;
+    }
+    ${customMedia.lessThan("tablet")`
+    margin-left:13rem
+    `}
   }
 
   .bottom-form img {
