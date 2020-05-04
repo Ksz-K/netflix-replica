@@ -57,7 +57,6 @@ const FooterContainer = styled.footer`
   .lang-toggle {
     margin-top: -5rem;
     position: absolute;
-
     ul {
       margin: 0;
     }
@@ -65,7 +64,7 @@ const FooterContainer = styled.footer`
 
   .lang-toggle ul {
     background: var(--main-deep-dark);
-    width: 8.125rem;
+    width: 8rem;
     border: 1px solid #333;
     text-align: center;
     &:hover {
