@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/netflix-replica/static/css/main.06e94f25.chunk.css",
+    "main.js": "/netflix-replica/static/js/main.b98e903a.chunk.js",
+    "main.js.map": "/netflix-replica/static/js/main.b98e903a.chunk.js.map",
+    "runtime-main.js": "/netflix-replica/static/js/runtime-main.76b55c05.js",
+    "runtime-main.js.map": "/netflix-replica/static/js/runtime-main.76b55c05.js.map",
+    "static/js/2.f39c179a.chunk.js": "/netflix-replica/static/js/2.f39c179a.chunk.js",
+    "static/js/2.f39c179a.chunk.js.map": "/netflix-replica/static/js/2.f39c179a.chunk.js.map",
+    "index.html": "/netflix-replica/index.html",
+    "precache-manifest.6d6ff7b3726c55103df1bb7af6b03eef.js": "/netflix-replica/precache-manifest.6d6ff7b3726c55103df1bb7af6b03eef.js",
+    "service-worker.js": "/netflix-replica/service-worker.js",
+    "static/css/main.06e94f25.chunk.css.map": "/netflix-replica/static/css/main.06e94f25.chunk.css.map",
+    "static/js/2.f39c179a.chunk.js.LICENSE.txt": "/netflix-replica/static/js/2.f39c179a.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/netflix-replica/static/media/bg.dc2411c9.jpg",
+    "static/media/logo.svg": "/netflix-replica/static/media/logo.cadb5e00.svg",
+    "static/media/tab-1-pic.png": "/netflix-replica/static/media/tab-1-pic.fab25bc3.png",
+    "static/media/tab-macbook.png": "/netflix-replica/static/media/tab-macbook.66c7c1fb.png",
+    "static/media/tab-tablet.png": "/netflix-replica/static/media/tab-tablet.dc986d81.png",
+    "static/media/tab-tv.png": "/netflix-replica/static/media/tab-tv.9f91203b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.76b55c05.js",
+    "static/js/2.f39c179a.chunk.js",
+    "static/css/main.06e94f25.chunk.css",
+    "static/js/main.b98e903a.chunk.js"
+  ]
+}
