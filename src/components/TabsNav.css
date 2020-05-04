@@ -4,16 +4,37 @@
   fill: var(--main-grey);
 }
 
+@media (max-width: 900px) {
+  .tab-icon-door {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
+
 .tab-icon-devices {
   width: 9.6875rem;
   height: 9.6875rem;
   fill: var(--main-grey);
 }
 
+@media (max-width: 900px) {
+  .tab-icon-devices {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
 .tab-icon-price {
   width: 4.375rem;
   height: 4.375rem;
   fill: var(--main-grey);
+}
+
+@media (max-width: 900px) {
+  .tab-icon-price {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
 }
 
 .tabs {
@@ -51,4 +72,20 @@ ul li:hover svg path {
 
 .tab-selected svg path {
   fill: #fff;
+}
+
+@media (min-width: 900px) {
+  .mdScreen {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .lgScreen {
+    display: none;
+  }
+
+  .mdScreen {
+    margin-bottom: 0.4rem;
+    display: block;
+  }
 }

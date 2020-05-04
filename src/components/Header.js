@@ -5,13 +5,14 @@ import { Icon } from "react-icons-kit";
 import { ic_keyboard_arrow_right } from "react-icons-kit/md/ic_keyboard_arrow_right";
 import { Button } from "./Button";
 import styled from "styled-components";
+import { generateMedia } from "styled-media-query";
 class Header extends Component {
   render() {
     return (
       <HeaderComponent className="header-container">
         <div className="header-top">
           <Logo src={logo} alt="" />
-          <NavLink to="/" className="signIn-btn">
+          <NavLink to="/login" className="signIn-btn">
             Sign In
           </NavLink>
         </div>
@@ -30,6 +31,13 @@ class Header extends Component {
 
 export default Header;
 
+const customMedia = generateMedia({
+  lgDesktop: "1350px",
+  mdDesktop: "1150px",
+  tablet: "960px",
+  smTablet: "740px",
+});
+
 const Logo = styled.img`
   width: 10rem;
   height: 3.5rem;
@@ -37,8 +45,19 @@ const Logo = styled.img`
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
+  ${customMedia.lessThan("tablet")`
+  left:20%;
+  `}
 `;
 const HeaderComponent = styled.div`
+
+.Icon svg {
+  vertical-align:bottom !important;
+  margin-left:1.5rem;
+  ${customMedia.lessThan("smTablet")`
+   display: none !important
+  `}
+}
   .signIn-btn {
     right: 0;
     margin: 1.125rem 3% 0;
@@ -55,6 +74,10 @@ const HeaderComponent = styled.div`
     &:hover {
       background: var(--main-red-hover);
     }
+    ${customMedia.lessThan("smTablet")`
+    margin-top:1.25rem;
+    right:5%;
+    `}
   }
 
   .header-top {
@@ -72,9 +95,29 @@ const HeaderComponent = styled.div`
     align-content: center;
     text-align: center;
     flex-direction: column;
-    z-index: 1;
+    z-index: 2;
+    ${customMedia.lessThan("smTablet")`
+ display:grid;
+ grid-template-rows: repeat(3, 60px);
+ margin-top:8rem
+    `}
   }
 
+  .main-offer-btn {
+    ${customMedia.lessThan("lgDesktop")`
+    margin:0 33%;
+    font-size:1.5rem
+    `}
+    ${customMedia.lessThan("mdDesktop")`
+    margin:0 25%;
+    font-size:1.5rem
+    `}
+    ${customMedia.lessThan("tablet")`
+    margin:0 20%;
+    font-size:1.3rem
+    `}
+   
+  }
   // .main-offer-btn {
   //   display: inline-block;
   //   background: var(--main-red);
@@ -105,6 +148,9 @@ const Title = styled.h1`
   font-size: 5rem;
   font-weight: 700;
   line-height: 5.5rem;
+  ${customMedia.lessThan("tablet")`
+  font-size:2.6rem
+  `}
 `;
 
 const SubTitle = styled.h2`
@@ -113,4 +159,8 @@ const SubTitle = styled.h2`
   line-height: 1.25rem;
   margin: 0 0 1.875rem;
   text-transform: uppercase;
+  ${customMedia.lessThan("smTablet")`
+  font-size:1.4rem
+  margin:0
+  `}
 `;

@@ -11,7 +11,7 @@ import "./TabsNav.css";
 
 class TabComponent extends Component {
   state = {
-    tabIndex: 0
+    tabIndex: 0,
   };
   render() {
     return (
@@ -19,7 +19,7 @@ class TabComponent extends Component {
         <Tabs
           className="tabs"
           selectedIndex={this.state.tabIndex}
-          onSelect={tabIndex => this.setState({ tabIndex })}
+          onSelect={(tabIndex) => this.setState({ tabIndex })}
         >
           <TabList className="tab-nav-container">
             <Tab
@@ -28,12 +28,16 @@ class TabComponent extends Component {
               }`}
             >
               <TabDoor />
-              <p style={{ marginBottom: "1.875rem" }}>
+              <p className="lgScreen" style={{ marginBottom: "1.875rem" }}>
                 <strong>
                   No commiments <br />
                   Cancel online at anytime
                 </strong>
               </p>
+              <br />
+              <span className="mdScreen" style={{ marginTop: "0.4rem" }}>
+                Cancel
+              </span>
             </Tab>
             <Tab
               className={`${
@@ -41,9 +45,12 @@ class TabComponent extends Component {
               }`}
             >
               <TabDevices />
-              <p style={{ marginTop: "-5.3125rem" }}>
+              <p className="lgScreen" style={{ marginTop: "-5.3125rem" }}>
                 <strong>Watch anywhere</strong>
               </p>
+              <span className="mdScreen" style={{ marginTop: "-5.3125rem" }}>
+                Devices
+              </span>
             </Tab>
             <Tab
               className={`${
@@ -51,9 +58,11 @@ class TabComponent extends Component {
               }`}
             >
               <TabPrices />
-              <p>
+              <p className="lgScreen">
                 <strong>Pick your price</strong>
               </p>
+              <br />
+              <span className="mdScreen">Price</span>
             </Tab>
           </TabList>
           <TabPanel>
