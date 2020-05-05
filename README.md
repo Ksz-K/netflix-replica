@@ -15,4 +15,4 @@ The idea behind was to create a replica of Netflix https://www.netflix.com/pl-en
 
 ### Live demo
 
-https://ksz-k.github.io/netflix-replica
+https://netflix-replica.kszk.pl

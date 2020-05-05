@@ -96,22 +96,22 @@ const Footer = () => {
   return (
     <FooterContainer>
       <span style={{ marginLeft: "10%", color: "#999" }}>
-        Questions? <Link>Call 1-234-567-8901</Link>{" "}
+        Questions? <Link to="#!">Call 1-234-567-8901</Link>{" "}
       </span>
       <div className="footer-columns">
         <ul>
           <li>
-            <Link>Gift Card Terms</Link>
+            <Link to="#!">Gift Card Terms</Link>
           </li>
         </ul>
         <ul>
           <li>
-            <Link>Terms of use</Link>
+            <Link to="#!">Terms of use</Link>
           </li>
         </ul>
         <ul>
           <li>
-            <Link>Privacy Statement</Link>
+            <Link to="#!">Privacy Statement</Link>
           </li>
         </ul>
       </div>
