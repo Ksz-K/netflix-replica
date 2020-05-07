@@ -13,6 +13,4 @@ The idea behind was to create a replica of Netflix https://www.netflix.com/pl-en
     "styled-components": "^5.0.1",
     "styled-media-query": "^2.1.2"
 
-
-## Live demo
-https://clonetflix.kszk.pl
+ 
